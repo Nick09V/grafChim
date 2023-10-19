@@ -1,7 +1,11 @@
 import React from "react"
 
     export const DispleySellosEstilos: React.CSSProperties = {
-        marginTop: "40px",
+        margin: "30px",
+        maxWidth: "500px",
+        minWidth: "500px",
+        maxHeight: "700px",
+        minHeight: "700px",
         display: "flex",
         flexDirection: "column",
         padding: "20px",
@@ -15,16 +19,25 @@ import React from "react"
         backgroundColor: "white",
         content: "5px",
         maxWidth: "300px",
+        minWidth: "200px",
+        maxHeight: "300px",
+        minHeight: "100px",
         margin: "0 auto",
         padding: "20px",
         border: "1px solid black",
         borderRadius: "10px",
+        
     }
 
 
 export const h1SellosEstilos:React.CSSProperties = {
-    backgroundColor: "green",
+    backgroundColor: "rgb(127,134,210)",
             display: "flex",
             padding: "20px",
-            color: "white"
+            color: "white",
+         
+}
+
+export const pSelloEstilo:React.CSSProperties = {
+    fontSize: "30px"
 }

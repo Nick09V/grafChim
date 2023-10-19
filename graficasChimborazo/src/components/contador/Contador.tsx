@@ -23,7 +23,7 @@ export const Contador = () => {
 
     return (
     <div style={{marginBottom: "700px", backgroundColor: "#f2f22f2", border: "1px solid black"}}>
-        <h2>La cuenta esta en: {number}</h2>
+        <h2>La cuenta del CONTADOR ACT esta en: {number}</h2>
         <button onClick={sumar}>+</button>
         <button onClick={restar}>-</button>
     </div>
