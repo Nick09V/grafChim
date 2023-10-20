@@ -7,7 +7,7 @@ function App() {
   return(
 
     <div style={{display: 'flex', flexDirection: 'column'}}>
-    <h1>Empresa</h1>  
+    <h1>Empresa 2</h1>  
 
     <SelloContainer/>
     
