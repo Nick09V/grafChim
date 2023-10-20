@@ -2,11 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { BrowserRouter, Link, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Home } from './pages/home/home.tsx'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { NotFound } from './pages/404/notFound.tsx'
 import { NavBar } from './components/NavBar/Nav.tsx'
-import { SelloDetail } from './components/SelloDetail/selloDetail.tsx'
+import { SelloDetail } from './components/SelloDe/selloDetail.tsx'
+import { Servicios } from './pages/servicios/Servicios.tsx'
+import { Contactenos } from './pages/contactenos/contactenos.tsx' 
 
 const router = createBrowserRouter([
   {
@@ -17,12 +18,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/servicios',
-    element: 
-    <>
-    <NavBar></NavBar>
-    <div>Esta es la pagina de servicios</div>,
-    
-    </>,
+    element: <Servicios></Servicios>,
     
     errorElement: <NotFound/>,
     
@@ -30,6 +26,16 @@ const router = createBrowserRouter([
   {
     path: 'inicio/:id',
     element: <SelloDetail/>,
+    errorElement: <NotFound/>,
+  },
+  {
+    path: 'contactenos',
+     element: <Contactenos/>,
+     errorElement: <NotFound/>,
+  },
+  {
+    path: '/',
+    element: <App/>,
     errorElement: <NotFound/>,
   },
 ]);

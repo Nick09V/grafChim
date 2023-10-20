@@ -1,20 +1,17 @@
 import React from "react"
 
     export const DispleyHome: React.CSSProperties = {
-        maxWidth: "1280px",
-        minWidth: "1280px",
-
-        minHeight: "720px",
-        maxHeight: "720px",
-
-
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        
         border: "1px solid red",
     }
 
     export const ulHome: React.CSSProperties = {
         display: 'flex',
         backgroundColor: 'rgba(100,222,40,0.8)',
-        border: '1px solid black',
+        
         padding: '20px',
         margin: '20px',
         borderRadius: '10px',

@@ -11,14 +11,18 @@ export const SelloContainer = () => {
       if(tipo === "sellos"){
         return SelloList.filter((sellos) => sellos.tipo.includes("sello"));
       }
+      if(tipo === "facturas"){
+        return SelloList.filter((sellos) => sellos.tipo.includes("factura"));
+      }
+      
 
       return[];
     }
-    console.log("filtrar productos:  " + filter);
+    //console.log("filtrar productos:  " + filter);
 
     useEffect(() => {
     if(filter) {
-      console.log("filtrar productos: ", filterProductos(filter));
+     // console.log("filtrar productos: ", filterProductos(filter));
       setSelloList(filterProductos(filter));
     }else {
       setSelloList(SelloList);
@@ -27,14 +31,15 @@ export const SelloContainer = () => {
 
 
   useEffect( () => {
-    console.log("la lista cambio");
+    //console.log("la lista cambio");
     setSelloList(ProductoList);
   }, [SelloList])
     return (
     <div>
       <input
       style={{padding: '10px', fontSize: '40px'}}
-       type="text" placeholder='Buscar producto' 
+       type="text"
+       placeholder='Buscar producto' 
        onChange={(e: ChangeEvent<HTMLInputElement>) => {
         Setfilter(e.target.value)
         

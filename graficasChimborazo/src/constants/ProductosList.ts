@@ -37,8 +37,17 @@ export interface ISello  {
         descripcion:"facturas lindas y baratitas",
         colores: ["BLANCO y NEGRO ", " Colores"],
         id: 3,
-        tamano: "A4",
+        tamano: "A6",
 
     },
+    {
+        name: "Facturas A4",
+        tipo: "factura",
+        imgUrl: "https://img.freepik.com/vector-premium/vector-premium-plantillas-factura-a4-diseno-factura-comercial-moderna_606468-570.jpg",
+        descripcion:"facturas lindas y baratitas 2",
+        colores: ["BLANCO y NEGRO ", " Colores"],
+        id: 4,
+        tamano: "A4",
+    }
 
 ]

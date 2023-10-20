@@ -1,23 +1,19 @@
-import { ulHome,liHome, ImgHome } from "./HomeEstilos"
-
+import { Link } from "react-router-dom"
+import { ulHome,liHome, ImgHome, DispleyHome } from "./HomeEstilos"
+import { UnsplashImages } from "../../components/imagenUnsplash/ImagenUnsplash"
+import { NavBar } from "../../components/NavBar/Nav"
+//<UnsplashImages></UnsplashImages>
 export const Home = () => {
 return (
-    <div>
+    <div style={DispleyHome}>
+        <NavBar></NavBar>
         <nav>
             <h1>Graficas Chimborazo</h1>  
-            <ul style={ulHome}>
-                <button style={liHome}>Inicio</button>
-                <button style={liHome}>Servicios</button>
-                <button style={liHome}>Promociones</button>
-                <button style={liHome}>Contactenos</button>
-                
-      </ul>
         </nav>
         <div>
             <img style={ImgHome} src ="../public/logo.jpeg"/>
-            <section>
-    
-            </section>
+            
+
 
 
         </div>
