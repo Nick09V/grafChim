@@ -9,7 +9,7 @@ type UnsplashImage = {
     alt_description: string;
   };
   
-  import React, { useEffect, useState } from 'react';
+  import { useEffect, useState } from 'react';
 
   const UnsplashImages = () => {
     const [images, setImages] = useState<UnsplashImage[]>([]);
