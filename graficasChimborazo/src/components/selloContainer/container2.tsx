@@ -3,7 +3,7 @@ import { CardImagen } from '../imagenes/productos'
 import { ChangeEvent, useEffect, useState } from "react"
 
 export const Container2 = () => {
-  const [SelloList, setSelloList] = useState<ISello[]>([]);
+ // const [SelloList, setSelloList] = useState<ISello[]>([]);
   const [filter, Setfilter] = useState<string>("");
   const [filteredSelloList, setFilteredSelloList] = useState<ISello[]>([]);
 
@@ -29,7 +29,7 @@ export const Container2 = () => {
 
   useEffect(() => {
     // Este efecto se ejecutará cada vez que cambie ProductoList
-    setSelloList(ProductoList);
+  //  setSelloList(ProductoList);
   }, [ProductoList]);
 
   return (

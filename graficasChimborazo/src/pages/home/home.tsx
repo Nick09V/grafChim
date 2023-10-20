@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-import { ulHome,liHome, ImgHome, DispleyHome } from "./HomeEstilos"
-import { UnsplashImages } from "../../components/imagenUnsplash/ImagenUnsplash"
+
+import {  ImgHome, DispleyHome } from "./HomeEstilos"
+//import { UnsplashImages } from "../../components/imagenUnsplash/ImagenUnsplash"
 import { NavBar } from "../../components/NavBar/Nav"
 //<UnsplashImages></UnsplashImages>
 export const Home = () => {
