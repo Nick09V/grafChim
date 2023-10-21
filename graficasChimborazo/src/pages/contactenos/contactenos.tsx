@@ -20,6 +20,7 @@ export const Contactenos = () => {
                 <br></br>
                 Celular: 999999999
                 <br></br>
+                <a href="www.whatsapp.com" target="_blank">whatsapp</a>
                 
             </p>
 

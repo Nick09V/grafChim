@@ -2,7 +2,7 @@ import React from "react"
 
     export const DispleySellosEstilos: React.CSSProperties = {
        // backgroundColor: colores.includes("blanco ") ? "#8F86D2" : "",
-        margin: "30px",
+        margin: "10px",
         maxWidth: "350px",
         minWidth: "350px",
         maxHeight: "700px",
