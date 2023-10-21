@@ -7,6 +7,22 @@ export const Contactenos = () => {
         <div>   
             <NavBar/>
 
+
+            <p style={{
+                border: "3px solid black",
+                textAlign: "center",
+                fontSize: "20px",
+                color: "black",
+                padding: "20px"
+            }}>Email: "usuario@gmail.com"
+                <br></br>
+                Telefono: 999999999
+                <br></br>
+                Celular: 999999999
+                <br></br>
+                
+            </p>
+
             Contactenos
         </div>
     )

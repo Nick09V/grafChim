@@ -11,10 +11,11 @@ type UnsplashImage = {
   
   import { useEffect, useState } from 'react';
 
-  const UnsplashImages = () => {
+   export const UnsplashImages = () => {
     const [images, setImages] = useState<UnsplashImage[]>([]);
     const accessKey = 'r8JtlDyglHJGzhD5X_1Emg4KIpryH7jjoEJHyo6CrAs'; // Reemplaza con tu clave de API de Unsplash
-    const numberOfImages = 1; // Cantidad de imágenes que deseas obtener
+    const numberOfImages = 0; // Cantidad de imágenes que deseas obtener
+
   console.log(numberOfImages); 
     useEffect(() => {
       const requestOptions = {
@@ -27,7 +28,7 @@ type UnsplashImage = {
       const fetchImages = async () => {
         try {
           const imagePromises = [];
-          for (let i = 0; i < numberOfImages; i++) {
+          
             const response = await fetch('https://api.unsplash.com/photos/random', requestOptions);
             const data = await response.json();
   
@@ -41,7 +42,7 @@ type UnsplashImage = {
             } else {
               imagePromises.push(data);
             }
-          }
+          
           const imageResults = await Promise.all(imagePromises);
           setImages(imageResults);
         } catch (error) {
@@ -59,12 +60,13 @@ type UnsplashImage = {
           {images.map(image => (
             <><img key={image.id} src={image.urls.small} alt={image.alt_description} /><p>Fotografo: {image.name}</p></>
           ))}
+          
+          
 
 
         </div>
       </div>
     );
-  }
-  
-  export default UnsplashImages;
-  
+  } 
+
+

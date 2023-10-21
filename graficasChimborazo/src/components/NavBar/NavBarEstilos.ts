@@ -1,6 +1,7 @@
 
 export const UlNav:React.CSSProperties = {
     border: '1px solid black',
+    backgroundColor: '#47b96e',
     padding: '20px',
     margin: '20px',
     borderRadius: '10px',

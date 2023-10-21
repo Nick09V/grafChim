@@ -1,11 +1,24 @@
 import React from "react"
 
+
     export const DispleyHome: React.CSSProperties = {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        
-        border: "1px solid red",
+        backgroundImage: "url(https://www.proandroid.com/wp-content/uploads/2017/04/Paisaje-HD.jpg)",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        padding: "20px",
+        borderRadius: "10px",
+        border: "1px solid blue",
+    }
+
+    export const H1Home: React.CSSProperties = {
+        backgroundColor: "white",
+        color: "#5A8947",
+        padding: "1%",
+        border: "groove",
+        fontSize: "200%",
     }
 
     export const ulHome: React.CSSProperties = {
@@ -38,7 +51,8 @@ import React from "react"
     }
 
     export const ImgHome: React.CSSProperties = {
-        display: "flex",
-        justifyContent: "left",
+        borderRadius: "10px",
+        border: "1px solid black",
+        justifyContent: "center",
         alignItems: "center",
     }

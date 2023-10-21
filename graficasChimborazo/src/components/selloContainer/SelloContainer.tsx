@@ -13,7 +13,7 @@ export const SelloContainer = () => {
       }
       if(tipo === "facturas"){
         return SelloList.filter((sellos) => sellos.tipo.includes("factura"));
-      }
+      } 
       
 
       return[];
